@@ -1,6 +1,12 @@
-<p><%= @question %></p>
-<p>-You</p>
-<p><%= @coach_answer %></p>
-<p>-Your coach</p>
+<div id="answer-style">
+  <div id="question">
+    <p><%= @question %></p>
+    <p><i>-You</i></p>
+  </div>
+  <div id="answer">
+    <p><%= @coach_answer %></p>
+    <p><i>-Your coach</i></p>
+  </div>
+</div>
 
 <%= link_to "Ask another question", ask_path %>
